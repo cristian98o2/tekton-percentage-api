@@ -1,0 +1,62 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+info:
+  app:
+    version: 1.0.0
+    name: tekton-percentage-api
+    description: Microservicio para el manejo de porcentajes
+
+spring:
+  application:
+    name: "tekton-percentage-api"
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:percentagedb}
+    username: ${DB_USER:postgres}
+    password: ${DB_PASS:postgres}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      pool-name: tekton-percentage-api
+      max-lifetime: 30000
+      minimum-idle: 5
+      idle-timeout: 30000
+  sql:
+    init:
+      mode: "always"
+      continue-on-error: true
+  jpa:
+    defer-datasource-initialization: true
+    database-platform: "org.hibernate.dialect.PostgreSQLDialect"
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: "org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl"
+    show-sql: false
+  mvc:
+    servlet:
+      path: "/tekton"
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,prometheus
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+logging:
+  level:
+    com.tekton.percentage.api: "DEBUG"
+
+cache:
+  name: "percentCache"
