@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tekton.percentage.api.infraestructure.adapters.restconsumer.PercentageClientPortImplTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-10-29T02:26:04" hostname="CRISTIAN-CARDENAS.local" time="0.41">
+  <properties/>
+  <testcase name="getPercentageIsNotSuccessful()" classname="com.tekton.percentage.api.infraestructure.adapters.restconsumer.PercentageClientPortImplTest" time="0.378"/>
+  <testcase name="getPercentageException()" classname="com.tekton.percentage.api.infraestructure.adapters.restconsumer.PercentageClientPortImplTest" time="0.002"/>
+  <testcase name="getPercentage()" classname="com.tekton.percentage.api.infraestructure.adapters.restconsumer.PercentageClientPortImplTest" time="0.029"/>
+  <system-out><![CDATA[21:26:04.635 [Test worker] INFO com.tekton.percentage.api.infraestructure.adapters.restconsumer.PercentageClientPortImpl -- Generating percentage 59.02158897360948
+21:26:04.638 [Test worker] ERROR com.tekton.percentage.api.infraestructure.adapters.restconsumer.PercentageClientPortImpl -- null
+21:26:04.638 [Test worker] INFO com.tekton.percentage.api.infraestructure.adapters.restconsumer.PercentageClientPortImpl -- Generating percentage 56.92676183793439
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

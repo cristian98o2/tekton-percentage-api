@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tekton.percentage.api.domain.usecase.PercentageUseCaseTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-10-29T02:26:03" hostname="CRISTIAN-CARDENAS.local" time="0.11">
+  <properties/>
+  <testcase name="shouldComputePercentageCustomException()" classname="com.tekton.percentage.api.domain.usecase.PercentageUseCaseTest" time="0.101"/>
+  <testcase name="shouldComputePercentageGettingCache()" classname="com.tekton.percentage.api.domain.usecase.PercentageUseCaseTest" time="0.004"/>
+  <testcase name="shouldComputePercentage()" classname="com.tekton.percentage.api.domain.usecase.PercentageUseCaseTest" time="0.002"/>
+  <system-out><![CDATA[21:26:03.766 [Test worker] INFO com.tekton.percentage.api.domain.usecase.PercentageUseCase -- The percentage was calculated successfully
+21:26:03.769 [Test worker] INFO com.tekton.percentage.api.domain.usecase.PercentageUseCase -- The percentage was calculated successfully
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

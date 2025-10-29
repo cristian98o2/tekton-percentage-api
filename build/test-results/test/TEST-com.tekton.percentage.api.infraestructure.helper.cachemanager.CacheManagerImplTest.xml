@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tekton.percentage.api.infraestructure.helper.cachemanager.CacheManagerImplTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-10-29T02:26:04" hostname="CRISTIAN-CARDENAS.local" time="0.081">
+  <properties/>
+  <testcase name="shouldSaveCache()" classname="com.tekton.percentage.api.infraestructure.helper.cachemanager.CacheManagerImplTest" time="0.06"/>
+  <testcase name="shouldGetCacheException()" classname="com.tekton.percentage.api.infraestructure.helper.cachemanager.CacheManagerImplTest" time="0.001"/>
+  <testcase name="shouldGetCache()" classname="com.tekton.percentage.api.infraestructure.helper.cachemanager.CacheManagerImplTest" time="0.019"/>
+  <system-out><![CDATA[21:26:04.792 [Test worker] INFO com.tekton.percentage.api.infraestructure.helper.cachemanager.CacheManagerImpl -- Api will save cache percentage 12.5
+21:26:04.811 [Test worker] INFO com.tekton.percentage.api.infraestructure.helper.cachemanager.CacheManagerImpl -- Api will get percentage from cache. Mock for ValueWrapper, hashCode: 568997880
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
